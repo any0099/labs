@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Авторизация — Личный кабинет студента</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="app-header__inner">
+      <a class="app-header__logo" href="login.html">Личный кабинет студента</a>
+      <nav class="app-nav" aria-label="Основная навигация">
+        <a href="login.html" aria-current="page">Авторизация</a>
+        <a href="profile.html">Личный кабинет</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="app-main app-main--login">
+    <form class="login-form" action="profile.html" method="get" aria-labelledby="login-title">
+      <h1 id="login-title">Вход</h1>
+      <p class="login-form__description">Добро пожаловать в личный кабинет студента.</p>
+      <div class="form-field">
+        <label for="login">Логин</label>
+        <input id="login" type="text" autocomplete="username" required>
+      </div>
+      <div class="form-field">
+        <label for="pwd">Пароль</label>
+        <input id="pwd" type="password" autocomplete="current-password" required>
+      </div>
+      <label class="checkbox-label" for="remember">
+        <input type="checkbox" id="remember">
+        <span>Запомнить меня</span>
+      </label>
+      <button type="submit">Войти</button>
+    </form>
+  </main>
+
+  <footer class="app-footer">
+    <p>&copy; 2026 Личный кабинет студента</p>
+  </footer>
+
+</body>
+</html>
